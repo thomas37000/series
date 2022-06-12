@@ -1,0 +1,11 @@
+.main-saisons {
+  display: flex;
+  justify-content: center;
+}
+
+.all-saisons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: center;
+}

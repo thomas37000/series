@@ -1,0 +1,13 @@
+.series-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: system-ui;
+}
+
+.series {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  justify-content: center;
+}

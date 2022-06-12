@@ -1,1 +1,23 @@
-<p>series works!</p>
+<div class="serie-form" *ngIf="series$">
+  <form>
+    <input type="text" id="name" name="name" placeholder="Strangers Things" />
+  </form>
+</div>
+
+<div>
+  <div *ngIf="series$ | async as series">
+    <p *ngIf="series.length == 0">pas de séries</p>
+    <div *ngIf="series.length > 0">
+      <div class="series">
+        <div *ngFor="let s of series">
+          <a routerLink="/serie/{{s.id}}"
+            ><img
+              [src]="s.image"
+              [alt]="s.nom"
+              (click)="getSaisons(s.id)"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

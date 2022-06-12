@@ -1,3 +1,5 @@
+import { Series } from "./serie";
+
 export class Saison {
   private _id: number;
   private _numero: number;
@@ -28,4 +30,12 @@ export class Saison {
   public set image(value: string) {
     this._image = value;
   }
+
+  // public get serie(): Series {
+  //   return this._serie;
+  // }
+
+  // public set serie(value: Series) {
+  //   this._serie = value;
+  // }
 }

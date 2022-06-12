@@ -1,1 +1,10 @@
-<p>saisons works!</p>
+<div *ngIf="serie$ | async as serie">
+  <div>
+    <div class="all-saisons">
+      <div *ngFor="let s of serie.saisons">
+        <img [src]="s.image" [alt]="s.numero" />
+      </div>
+    </div>
+  </div>
+</div>
+    
